@@ -1,5 +1,6 @@
-//Clase heredada de Persona, ROL: Técnico con especialidad asignada.
+package model;
 
+//Clase heredada de Persona, ROL: Técnico con especialidad asignada.
 public class Tecnico extends Persona{
     //Atributo propio
     private String especialidad;

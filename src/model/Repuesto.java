@@ -1,3 +1,5 @@
+package model;
+
 //Clase Repuesto, son el o los materiales que se usarán para el servicio.
 public class Repuesto {
     //Atributos

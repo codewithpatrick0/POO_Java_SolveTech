@@ -1,3 +1,5 @@
+package model;
+
 //Establecemos clase abstracta Persona es una plantilla con características comúnes
 public abstract class Persona {
     protected int id;

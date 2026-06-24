@@ -1,3 +1,4 @@
+package model;
 //Importamos LocalDate para declarar con este tipo de variable a la fecha que será atributo de la clase OrdenServicio
 import java.time.LocalDate;
 

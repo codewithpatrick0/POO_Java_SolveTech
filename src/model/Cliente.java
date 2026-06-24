@@ -1,3 +1,5 @@
+package model;
+
 public class Cliente extends Persona{
     //Atributos propios
     private String correo;

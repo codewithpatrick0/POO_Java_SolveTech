@@ -1,3 +1,4 @@
+package model;
 import java.time.LocalDate;
 
 //Clase Venta, como su nombre lo dice será generada cada que se produzca una compra.
