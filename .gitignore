@@ -5,6 +5,6 @@
 .idea/
 out/
 *.class
-*.iml*.iml
-*.xml*.xml
+*.iml
+*.xml
 .env
