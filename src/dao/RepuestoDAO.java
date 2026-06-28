@@ -48,7 +48,7 @@ public class RepuestoDAO implements IOperaciones<Repuesto>{
                         resultado.getString("nombre"),
                         resultado.getString("descripcion"),
                         resultado.getBigDecimal("precio"),
-                        resultado.getInt("precio")
+                        resultado.getInt("stock")
                 );
                 listaRepuestos.add(r);
             }
@@ -69,7 +69,7 @@ public class RepuestoDAO implements IOperaciones<Repuesto>{
             try (ResultSet resultado = ps.executeQuery()){
                 if (resultado.next()){
                     Repuesto r = new Repuesto(
-                            resultado.getInt("id"),
+                            resultado.getInt("id_repuesto"),
                             resultado.getString("nombre"),
                             resultado.getString("descripcion"),
                             resultado.getBigDecimal("precio"),
