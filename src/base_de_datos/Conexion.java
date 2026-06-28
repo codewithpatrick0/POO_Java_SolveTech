@@ -5,7 +5,7 @@ import com.zaxxer.hikari.HikariDataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-public class conexion {
+public class Conexion {
     //Primero definimos HikariDataSource que es el motor encargado de administrar la pool
     private static HikariDataSource dataSource;
 

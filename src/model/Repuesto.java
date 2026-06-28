@@ -1,16 +1,18 @@
 package model;
 
+import java.math.BigDecimal;
+
 //Clase Repuesto, son el o los materiales que se usarán para el servicio.
 public class Repuesto {
     //Atributos
     private int idRepuesto;
     private String nombre;
     private String descripcion;
-    private double precio;
+    private BigDecimal precio;
     private int stock;
 
     //Constructor
-    public Repuesto(int idRepuesto, String nombre, String descripcion, double precio, int stock) {
+    public Repuesto(int idRepuesto, String nombre, String descripcion, BigDecimal precio, int stock) {
         this.idRepuesto = idRepuesto;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -22,14 +24,14 @@ public class Repuesto {
     public int getIdRepuesto() {return idRepuesto;}
     public String getNombre() {return nombre;}
     public String getDescripcion() {return descripcion;}
-    public double getPrecio() {return precio;}
+    public BigDecimal getPrecio() {return precio;}
     public int getStock() {return stock;}
 
     //SETTERS
     public void setIdRepuesto(int idRepuesto) {this.idRepuesto = idRepuesto;}
     public void setNombre(String nombre) {this.nombre = nombre;}
     public void setDescripcion(String descripcion) {this.descripcion = descripcion;}
-    public void setPrecio(double precio) {this.precio = precio;}
+    public void setPrecio(BigDecimal precio) {this.precio = precio;}
     public void setStock(int stock) {this.stock = stock;}
 
     public String getInfo(){

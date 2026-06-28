@@ -1,4 +1,5 @@
 package model;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 //Clase Venta, como su nombre lo dice será generada cada que se produzca una compra.
@@ -7,11 +8,11 @@ public class Venta {
     private int idOrden;
     private int idRepuesto;
     private int cantidad;
-    private double total;
+    private BigDecimal total;
     private LocalDate fecha;
 
     //Constructor
-    public Venta(int idVenta, int idOrden, int idRepuesto, int cantidad, double total, LocalDate fecha) {
+    public Venta(int idVenta, int idOrden, int idRepuesto, int cantidad, BigDecimal total, LocalDate fecha) {
         this.idVenta = idVenta;
         this.idOrden = idOrden;
         this.idRepuesto = idRepuesto;
@@ -25,7 +26,7 @@ public class Venta {
     public int getIdOrden() {return idOrden;}
     public int getIdRepuesto() {return idRepuesto;}
     public int getCantidad() {return cantidad;}
-    public double getTotal() {return total;}
+    public BigDecimal getTotal() {return total;}
     public LocalDate getFecha() {return fecha;}
 
     //SETTERS
@@ -33,7 +34,7 @@ public class Venta {
     public void setIdOrden(int idOrden) {this.idOrden = idOrden;}
     public void setIdRepuesto(int idRepuesto) {this.idRepuesto = idRepuesto;}
     public void setCantidad(int cantidad) {this.cantidad = cantidad;}
-    public void setTotal(double total) {this.total = total;}
+    public void setTotal(BigDecimal total) {this.total = total;}
     public void setFecha(LocalDate fecha) {this.fecha = fecha;}
 
     //Métodos
