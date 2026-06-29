@@ -22,7 +22,9 @@ public class TecnicoController {
         return true;
     }
 
-    public List<Tecnico> obtenerTecnicos(){return dao.listar();}
+    public List<Tecnico> obtenerTecnicos(){
+        return dao.listar();
+    }
 
     public Tecnico obtenerTecnicoPorId(int id){
         Optional<Tecnico> t = dao.buscarPorId(id);
