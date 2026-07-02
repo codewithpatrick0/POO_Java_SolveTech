@@ -1,4 +1,4 @@
-package Formatters;
+package formatters;
 
 public class Formatter {
     public static String capitalizar(String string){

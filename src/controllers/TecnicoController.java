@@ -1,6 +1,6 @@
 package controllers;
 
-import Formatters.Formatter;
+import formatters.Formatter;
 import dao.TecnicoDAO;
 import model.Tecnico;
 import utils.Validador;

@@ -1,6 +1,6 @@
 package controllers;
 
-import Formatters.Formatter;
+import formatters.Formatter;
 import dao.ClienteDAO;
 import model.Cliente;
 import utils.Validador;

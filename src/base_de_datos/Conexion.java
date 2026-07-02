@@ -16,10 +16,7 @@ public class Conexion {
         config.setDriverClassName("org.postgresql.Driver");
         //Definir conexión a base de datos NEON POSTGRESQL
         String urlNeon = dotenv.get("NEON_STRING");
-        if (urlNeon != null && !urlNeon.startsWith("jdbc:")) {
-            urlNeon = "jdbc:" + urlNeon;
-        }
-        config.setJdbcUrl(urlNeon);
+        config.setJdbcUrl(dotenv.get("NEON_STRING"));
         config.setUsername(dotenv.get("DB_USER"));
         config.setPassword(dotenv.get("DB_PASS"));
 

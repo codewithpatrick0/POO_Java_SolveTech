@@ -1,6 +1,6 @@
 package view;
 
-import Formatters.Formatter;
+import formatters.Formatter;
 import controllers.*;
 import model.*;
 
