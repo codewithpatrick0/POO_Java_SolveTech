@@ -1,5 +1,6 @@
 package controllers;
 
+import Formatters.Formatter;
 import dao.ClienteDAO;
 import model.Cliente;
 import utils.Validador;
@@ -21,7 +22,7 @@ public class ClienteController {
             System.out.println("Error: Correo inválido");
             return false;
         }
-        Cliente c = new Cliente(0, nombre, telefono, correo, direccion);
+        Cliente c = new Cliente(0, Formatter.capitalizar(nombre), telefono, correo, direccion);
         dao.insertar(c);
         return true;
     }
@@ -45,7 +46,7 @@ public class ClienteController {
             System.out.println("Error: Correo inválido");
             return false;
         }
-        Cliente c = new Cliente(id, nombre, telefono, correo, direccion);
+        Cliente c = new Cliente(id, Formatter.capitalizar(nombre), telefono, correo, direccion);
         dao.actualizar(c);
         return true;
     }

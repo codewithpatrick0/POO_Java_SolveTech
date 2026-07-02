@@ -1,5 +1,6 @@
 package controllers;
 
+import Formatters.Formatter;
 import dao.TecnicoDAO;
 import model.Tecnico;
 import utils.Validador;
@@ -17,7 +18,7 @@ public class TecnicoController {
             System.out.println("Error: nombre o teléfono inválidos");
             return false;
         }
-        Tecnico t = new Tecnico(0, nombre, telefono, especialidad);
+        Tecnico t = new Tecnico(0, Formatter.capitalizar(nombre), telefono, especialidad);
         dao.insertar(t);
         return true;
     }
@@ -36,7 +37,7 @@ public class TecnicoController {
             System.out.println("Error: nombre o teléfono inválido");
             return false;
         }
-        Tecnico t = new Tecnico(id, nombre, telefono, especialidad);
+        Tecnico t = new Tecnico(id, Formatter.capitalizar(nombre), telefono, especialidad);
         dao.actualizar(t);
         return true;
     }

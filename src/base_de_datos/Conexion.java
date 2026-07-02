@@ -13,7 +13,13 @@ public class Conexion {
         Dotenv dotenv = Dotenv.load(); //Encargada de extraer la variable de .env
 
         HikariConfig config = new HikariConfig();
-        config.setJdbcUrl(dotenv.get("NEON_STRING"));
+        config.setDriverClassName("org.postgresql.Driver");
+        //Definir conexión a base de datos NEON POSTGRESQL
+        String urlNeon = dotenv.get("NEON_STRING");
+        if (urlNeon != null && !urlNeon.startsWith("jdbc:")) {
+            urlNeon = "jdbc:" + urlNeon;
+        }
+        config.setJdbcUrl(urlNeon);
         config.setUsername(dotenv.get("DB_USER"));
         config.setPassword(dotenv.get("DB_PASS"));
 
